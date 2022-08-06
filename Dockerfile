@@ -1,10 +1,21 @@
 FROM ubuntu:22.04
 
-ENV TERM linux
-ENV DEBIAN_FRONTEND noninteractive
-
+CMD ["/bin/bash"] 
+# Баш
 RUN apt-get update
-RUN apt-get install -y  
+RUN apt install nano cron
+# Пакеты 
+RUN adduser dave -p Dave00769 --gecos
+# Пользак без sudo# Dave : Dave00769. Флаги не забудь
 
-CMD ["/bin/bash"]
+# Добавить подсказку в cron
+
+# Добавить bash history и сделать в нём ссылку на крон 
+
+# возможно сделать имитацию жизнедеятельности 
+RUN su dave 
+# Залогинить игрока в хоум пользака . Вроде отдельная команда
+
+
+
 
