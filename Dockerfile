@@ -9,8 +9,12 @@ RUN adduser dave -p Dave00769 --gecos
 # Пользак без sudo# Dave : Dave00769. Флаги не забудь
 
 # Добавить подсказку в cron
-
-# Добавить bash history и сделать в нём ссылку на крон 
+RUN cd /var/spool/cron/crontabs
+RUN echo "# First of all I wanted to mount special volume on machine startup. " >> dave 
+# Добавить подсказку в fstab
+RUN echo "# I didn't write down what I did next. But it must be stored somwhere" >> /etc/fstab
+# Добавить подсказку в bash_history
+RUN echo "echo "
 
 # возможно сделать имитацию жизнедеятельности 
 RUN su dave 
