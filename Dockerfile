@@ -11,9 +11,10 @@ RUN adduser dave -p Dave00769 --gecos
 # Добавить подсказку в cron
 RUN echo "# First of all I wanted to mount special volume on machine startup. " >> /var/spool/cron/crontabs/dave 
 # Добавить подсказку в fstab
-RUN echo "# I didn't write down what I did next. But it must be stored somwhere" >> /etc/fstab
-# Добавить подсказку в bash_history
-RUN echo "echo YW50aWN0ZntuMFdfSV9rTjB3X0xpblV4fQ== | base64 -d" >> .bash_history
+RUN echo "# I didn't write down what I did next. But it must be stored somwhere. " >> /etc/fstab
+#!!!Возможно не вариант !!! Добавить подсказку в bash_history
+RUN echo "echo  " >> .bash_history 
+
 
 # возможно сделать имитацию жизнедеятельности 
 RUN su dave 
