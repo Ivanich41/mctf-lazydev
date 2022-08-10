@@ -6,7 +6,6 @@ services:
     ports:
       - "2022:22"
 
-
-
+# docker-compose up --build -d
 
 

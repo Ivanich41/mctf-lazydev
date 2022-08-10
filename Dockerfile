@@ -27,6 +27,6 @@ RUN touch /home/dave/.bash_history && echo "whoami\ncd 192.168.56.115\stole\ndoc
 CMD ["/usr/sbin/sshd","-D"]
 
 # docker build - < Dockerfile -t lazydev 
-## docker run -d -p 2022:22 lazydev
+
 
 
