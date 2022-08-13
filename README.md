@@ -18,3 +18,8 @@ cd mctf-lazydev
 sudo docker build - < Dockerfile -t lazydev 
 sudo docker-compose up --build -d
 ```
+Старт:
+```
+ssh dave@<ip> -p 2022 
+Password: 1234
+```
