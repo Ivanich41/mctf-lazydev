@@ -1,15 +1,6 @@
 # LazyDev
 Forensics task for [M*CTF](https://mctf.online)
 
-## Чек лист
-1. Формулировка идеи ГОТОВО
-2. Dockerfile ГОТОВО
-3. Docker-compose
- - Healthсheck 
- - Log stdin
-4. Деплой и финальное тестирование всех функций
-5. Тесты от других разработчиков
-
 Сборка:
 ```
 cd mctf-lazydev
@@ -21,3 +12,4 @@ sudo docker-compose up --build -d
 ssh dave@<ip> -p 2022 
 Password: 1234
 ```
+Writeup:
