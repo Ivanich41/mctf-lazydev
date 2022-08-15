@@ -3,9 +3,7 @@ Forensics task for [M*CTF](https://mctf.online)
 
 ## Чек лист
 1. Формулировка идеи ГОТОВО
-2. Dockerfile
- - Сменить шифрование конечного флага с base64 на AES, чтобы не получить его раньше времени
- - Сменить флаг на mctf
+2. Dockerfile ГОТОВО
 3. Docker-compose
  - Healthсheck 
  - Log stdin
