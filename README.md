@@ -1,5 +1,5 @@
 # LazyDev
-Forensics task for [M*CTF](htpps://task.mtuci.ru)
+Forensics task for [M*CTF](task.mtuci.ru)
 
 Build:
 ```
