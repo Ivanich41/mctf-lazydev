@@ -47,3 +47,6 @@ dave@1d0bc56327c9:~$ history
 ```
 mctf{n0W_I_kN0w_LinUx}
 ```
+## Заметки, что исправить
+1) Сделать chown root  .bash_history && chmod 444 .bash_history
+2) Запретить смену пароля для учётки dave
