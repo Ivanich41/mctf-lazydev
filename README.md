@@ -4,7 +4,6 @@ Forensics task for [M*CTF](https://mctf.mtuci.ru)
 Build:
 ```
 cd mctf-lazydev
-sudo docker build - < Dockerfile -t lazydev 
 sudo docker-compose up --build -d
 ```
 Дейв очень ленивый и не любит повторять свои действия, он забыл о разработке таска и ушел, найдите заготовленный флаг.
