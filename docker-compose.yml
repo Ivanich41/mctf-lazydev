@@ -5,7 +5,12 @@ services:
     restart: always
     ports:
       - "2022:22"
-
+    healthcheck:
+      test: ["CMD", "nc","127.0.0.1 22"]
+      interval: 2m
+      timeout: 10s
+      retries: 1
+      
 # docker-compose up --build -d
 
 
