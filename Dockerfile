@@ -1,7 +1,7 @@
 FROM ubuntu:22.04
 
 RUN apt-get update
-RUN apt install -y nano cron openssh-server 
+RUN apt install -y nano cron openssh-server ncat
 RUN adduser --disabled-password --gecos "" dave
 # SSH 
 RUN groupadd sshgroup && usermod -aG sshgroup dave
