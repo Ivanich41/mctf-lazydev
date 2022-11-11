@@ -26,8 +26,8 @@ RUN chmod 744 /etc/fstab
 RUN chmod +t /etc/fstab
 # History tip
 RUN touch /home/dave/.bash_history && echo "whoami\ncd 192.168.56.115\stole\ndocker\n apt install rustup\napt-get install rustup\ncurl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh\nrustup install 1.58.0\nrustup\ncurl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh 'nrustup update \nreboot\ncd /\nsudo su\ncargo run\nls\ncargo run\nrustc --version\nls\nsu\nsudo su\nls\ncd Downloads/\nls\nsudo apt install clang++\nLD=lld AS=llvm-as AR=llvm-ar RANLIB=llvm-ranlib CC=clang CXX=clang++ CFLAGS=-fsanitize=address\nmake -j(nproc)\nLD=lld  CXXFLAGS=-fsanitize=address LDFLAGS=-ldl -fsanitize=address ./configure --with-features=huge --enable-gui=none\nvim\ncd /lib/x86_64-linux-gnu/\necho yalj{p0N_M_dX0a_JulMb}\n ls | grep libthread_db.so.1\nclear\npython3 get-timetable.py \necho Vigenère cipher cool\nreboot\nls\ncd Downloads/\npython3 get-timetable.py \nls\nclear\nvim get-timetable.py\npython3 get-timetable.py\npwq\npwd\nwhoami\nwhoami\nls\nrm -f gconv-modules GCONV_PATH\=./ \nrm -rf gconv-modules GCONV_PATH\=./" >> /home/dave/.bash_history
-RUN chown root .bash_history && chmod 444 .bash_history
+RUN chown root /home/dave/.bash_history && chmod 444 /home/dave/.bash_history
+RUn chmod u-s $(which passwd)
 
 CMD ["/usr/sbin/sshd","-D"]
 
-# docker build - < Dockerfile -t lazydev 

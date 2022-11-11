@@ -1,7 +1,8 @@
 version: '3.9'
 services: 
   lazydev:
-    image: lazydev
+    container_name: mctf-lazydev-ssh
+    build: .
     restart: always
     ports:
       - "2022:22"
